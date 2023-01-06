@@ -38,7 +38,7 @@ pub fn part1(file: String) -> usize {
     .chars()
     .enumerate()
     .skip(4)
-    .find_map(|(index, c)| {
+    .find_map(|(index, _)| {
         let mut h: HashSet<char> = HashSet::new();
         for i in 1..=4 {
             h.insert(v[index - i]);
@@ -62,7 +62,7 @@ pub fn part2(file: String) -> usize {
     .chars()
     .enumerate()
     .skip(14)
-    .find_map(|(index, c)| {
+    .find_map(|(index, _)| {
         let mut h: HashSet<char> = HashSet::new();
         for i in 1..=14 {
             h.insert(v[index - i]);
